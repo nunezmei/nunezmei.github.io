@@ -1,5 +1,5 @@
 <ul>
-    <li><a href="{% if !page.ishome %}/{% endif %}#projects">My Projects</a></li>
+    <li><a href="{% if page.ishome != true %}/{% endif %}#projects">My Projects</a></li>
     <li><a href="#" data-toggle="modal" data-target="#about-me-modal">About Me</a></li>
     <li><a href="download/maryann.denman.resume.pdf" download>Download Resume</a></li>
     <li><a href="#" data-toggle="modal" data-target="#contact-me-modal">Contact me</a></li>

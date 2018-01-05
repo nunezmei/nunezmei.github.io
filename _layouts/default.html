@@ -7,7 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Mary Ann - Multipurpose HTML Template</title>
     <link rel="stylesheet" type="text/css" href="css/master.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3643096-27"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-3643096-27');
+    </script>
 </head>
 <body>
 
@@ -24,7 +33,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-xs-8">
-                <a href="index.html" class="logo">
+                <a href="/" class="logo">
                     <div class="header-avatar">
                         <img src="media/first-screen/logo.small.jpg" alt="">
                     </div>
@@ -64,7 +73,7 @@
     <div class="mobile-box-wrap">
         <div class="mobile-box-flex">
             <div class="mobile-menu header-links">
-                {% include mainmenu.html %}
+                {% include mainmenu.html ishome=page.ishome %}
             </div>
             <!--
             <div class="change-lng header-links">

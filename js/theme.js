@@ -119,7 +119,7 @@ $(document).ready(function () {
     $('.change-lng ul li a').on('click', function (event) {
         event.preventDefault();
         document.cookie = 'lang=' + $(this).text();
-        window.location = 'index.html';
+        window.location = '/';
     });
 
 

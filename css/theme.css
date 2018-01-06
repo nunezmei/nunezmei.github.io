@@ -46,6 +46,12 @@ body {
 :focus {
   outline: none !important; }
 
+
+  .built-with > a, 
+  .built-with > a:hover {
+    color: blue;
+    text-decoration-line: underline;
+  }
 /* Loader */
 #page-preloader {
   position: fixed;
@@ -785,5 +791,9 @@ textarea.site-input:hover, textarea.site-input:focus {
   text-align: center; }
 
 /* footer */
+.built-with {
+  font-size: smaller;  
+}
+
 
 /*# sourceMappingURL=maps/theme.css.map */

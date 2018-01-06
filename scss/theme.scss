@@ -48,6 +48,15 @@ body {
   outline: none !important;
 }
 
+.built-with {
+  font-size: smaller;
+
+  a, a:hover {
+    color: blue;
+    text-decoration-line: underline;
+  }
+}
+
 /* Loader */
 #page-preloader {
   position: fixed;

@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Mary Ann Denman - {{ page.pageTitle }}</title>
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
     <link rel="stylesheet" type="text/css" href="css/master.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

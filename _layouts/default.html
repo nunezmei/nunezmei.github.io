@@ -20,6 +20,12 @@
 
     gtag('config', 'UA-3643096-27');
     </script>
+
+    <style>
+        .project-nav > span:last-child {
+            float:right;
+        }
+    </style>
 </head>
 <body>
 
@@ -63,7 +69,17 @@
                     <div></div>
                 </div>
             </div>
-        </div>
+            {% if page.nextUrl or page.prevUrl %}
+            <div class="project-nav">
+                {% if page.prevUrl %}
+                <span><a href="{{ page.prevUrl }}">Previous</a></span>
+                {% endif %}
+                {% if page.nextUrl %}
+                <span><a href="{{ page.nextUrl }}">Next</a></span>
+                {% endif %}
+                </div>
+            {% endif %}
+</div>
     </div>
 </header>
 <!-- Header -->

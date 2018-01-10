@@ -4,6 +4,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% if page.canonical %}
+    <link rel="canonical" href="{{site.url}}/{{page.canonical}}" />
+    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Mary Ann Denman - {{ page.pageTitle }}</title>
     {% if page.description %}

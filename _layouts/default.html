@@ -22,8 +22,29 @@
     </script>
 
     <style>
-        .project-nav > span:last-child {
+        .head-row {
+            position: relative; 
+            height: 40px;
+        }
+        .project-nav {
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            right: 0;
+        }
+        .project-nav .mnext {
             float:right;
+        }
+        .project-nav .mprev {
+            float:left;
+        }
+        @media (min-width: 992px) {
+            .head-row {
+                height: 50px;
+            }
+            .project-nav {
+                bottom: -10px;
+            }
         }
     </style>
 </head>
@@ -40,7 +61,7 @@
 <header class="header header-not-home">
 {% endif %}    
     <div class="container">
-        <div class="row">
+        <div class="row head-row">
             <div class="col-md-3 col-xs-8">
                 <a href="/" class="logo">
                     <div class="header-avatar">
@@ -72,10 +93,10 @@
             {% if page.nextUrl or page.prevUrl %}
             <div class="project-nav">
                 {% if page.prevUrl %}
-                <span><a href="{{ page.prevUrl }}">Previous</a></span>
+                <span class="mprev"><a href="{{ page.prevUrl }}" title="Go to prior project"><span class="mdi mdi-chevron-left mdi-dark"></span> Previous</a></span>
                 {% endif %}
                 {% if page.nextUrl %}
-                <span><a href="{{ page.nextUrl }}">Next</a></span>
+                <span class="mnext"><a href="{{ page.nextUrl }}"  title="go to next project">Next <span class="mdi mdi-chevron-right mdi-dark"></span></a></span>
                 {% endif %}
                 </div>
             {% endif %}

@@ -4,6 +4,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% if page.canonical %}
+    <link rel="canonical" href="{{site.url}}/{{page.canonical}}" />
+    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Mary Ann Denman - {{ page.pageTitle }}</title>
     {% if page.description %}
@@ -20,6 +23,34 @@
 
     gtag('config', 'UA-3643096-27');
     </script>
+
+    <style>
+        .head-row {
+            position: relative; 
+            height: 40px;
+            font-size: small;
+        }
+        .project-nav {
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            right: 0;
+        }
+        .project-nav .mnext {
+            float:right;
+        }
+        .project-nav .mprev {
+            float:left;
+        }
+        @media (min-width: 992px) {
+            .head-row {
+                height: 50px;
+            }
+            .project-nav {
+                bottom: -10px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -34,7 +65,7 @@
 <header class="header header-not-home">
 {% endif %}    
     <div class="container">
-        <div class="row">
+        <div class="row head-row">
             <div class="col-md-3 col-xs-8">
                 <a href="/" class="logo">
                     <div class="header-avatar">
@@ -63,7 +94,17 @@
                     <div></div>
                 </div>
             </div>
-        </div>
+            {% if page.nextUrl or page.prevUrl %}
+            <div class="project-nav">
+                {% if page.prevUrl %}
+                <span class="mprev"><a href="{{ page.prevUrl }}" title="Go to prior project"><span class="mdi mdi-chevron-left mdi-dark"></span> Prior Project</a></span>
+                {% endif %}
+                {% if page.nextUrl %}
+                <span class="mnext"><a href="{{ page.nextUrl }}"  title="go to next project">Next Project <span class="mdi mdi-chevron-right mdi-dark"></span></a></span>
+                {% endif %}
+                </div>
+            {% endif %}
+</div>
     </div>
 </header>
 <!-- Header -->

@@ -276,27 +276,23 @@ $(document).ready(function () {
                 var message = $('#' + thisForm).find("textarea.textarea").val();
     
                 $.ajax({
-                    url: "././mail/contact_me.php",
+                    url: "https://nzedd67e5a.execute-api.us-east-1.amazonaws.com/prod/sendContact",
                     type: "POST",
                     dataType: 'json',
-                    data: {
+                    contentType: 'application/json',
+                    data: JSON.stringify({
                         name: name,
                         email: email,
-                        message: message
-                    },
+                        description: message
+                    }),
                     cache: false,
                     success: function(data) {
-                        if(data.error){
-                            console.log('error');
-                        }
-                        else if(data.success){
-                            // Success message
-                            $('#send-message-modal').modal();
-                            //clear all fields
-                            $('#' + thisForm).trigger("reset");
-                            //close contact modal
-                            $('#contact-me-modal').modal("hide");
-                        }
+                        // Success message
+                        $('#send-message-modal').modal();
+                        //clear all fields
+                        $('#' + thisForm).trigger("reset");
+                        //close contact modal
+                        $('#contact-me-modal').modal("hide");
                     }
                 });
     

@@ -24,18 +24,7 @@ description: UX designer based in Seattle, Washington currently working at Strin
                     </div>
                     <div class="about-me-info hidden-sm hidden-xs">
                             {% include contactinfo.html %}
-                        <!--
-                        <p class="info-row">
-                            <span class="span-title">Social</span>
-                            <span>
-                                <a target="_blank" href="https://www.facebook.com/" class="fa fonts-icons mdi mdi-facebook"></a>
-                                <a target="_blank" href="https://twitter.com/" class="fa fonts-icons mdi mdi-twitter"></a>
-                                <a target="_blank" href="https://www.instagram.com/" class="fa fonts-icons mdi mdi-instagram"></a>
-                                <a target="_blank" href="https://dribbble.com/" class="fa fonts-icons mdi mdi-dribbble"></a>
-                                <a target="_blank" href="https://www.behance.net/" class="fa fonts-icons mdi mdi-behance"></a>
-                            </span>
-                        </p>
-                    -->
+                    
                     </div>
                     <div class="first-screen-buttons">
                         <a class="site-btn btn-theme-white" href="#" data-toggle="modal" data-target="#contact-me-modal">Contact me</a>
@@ -57,21 +46,6 @@ description: UX designer based in Seattle, Washington currently working at Strin
                 </div>
             </div>
         </div>
-
-        <!--
-        <div class="row">
-            <div class="col-md-12">
-                <div class="projects-filter">
-                    <ul class="list-inline">
-                        <li class="active" data-filter="*">All projects</li>
-                        <li data-filter=".web-apps">Web apps design</li>
-                        <li data-filter=".mob-apps">Mobile apps design</li>
-                        <li data-filter=".prototyping">Prototyping</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    -->
 
         <div class="row projects-wrapper">
             <div class="col-sm-6 col-xs-12 project-item web-apps">
@@ -126,35 +100,64 @@ description: UX designer based in Seattle, Washington currently working at Strin
                     </div>
                 </a>
             </div>
-            <!--
-            <div class="col-sm-6 col-xs-12 project-item mob-apps">
-                <a href="project.proj1.html" class="project">
-                    <div class="project-img">
-                        <img src="media/projects/img_3.jpg" alt="">
-                    </div>
-                    <div class="project-name">
-                        <h5>Recipe book Android app UI design for small startup</h5>
-                    </div>
-                    <div class="project-date">
-                        <p>August, 2016</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-6 col-xs-12 project-item prototyping">
-                <a href="project.proj1.html" class="project">
-                    <div class="project-img">
-                        <img src="media/projects/img_7.jpg" alt="">
-                    </div>
-                    <div class="project-name">
-                        <h5>Personal page template UI\UX design</h5>
-                    </div>
-                    <div class="project-date">
-                        <p>July, 2016</p>
-                    </div>
-                </a>
-            </div>
-            -->
         </div>
 
-    </div>
+        <style>
+            .testimonials {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            .testimonial {
+                border-right: solid 1px gray;
+            }
+            .quote {
+                font-style: italic;
+                font-weight:100;
+                font-size: x-large;
+            }
+            .quote::before, .quote::after {
+                content: "\"";
+                font-size: xx-large;
+            }
+            .quote-from {
+                padding-left: 40px;
+                font-size: large;
+                font-weight: bold;
+                vertical-align: middle;
+            }
+            .quote-from::before {
+                content: "-";
+            }
+            .quote-from > span {
+                font-size: smaller;
+            }
+        </style>
+        <!--
+        <div class="row">
+            <div class="col-12">
+                <h3>Testimonials</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="row testimonials">
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <p class="quote">I think she did a great job.</p>
+                    <div class="quote-from">Kelly Bailey - <span>Client, Loss Prevention</span></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <p class="quote">I think she did a great job.</p>
+                    <div class="quote-from">Kelly Bailey</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <p class="quote">I think she did a great job.</p>
+                    <div class="quote-from">Kelly Bailey</div>
+                </div>
+            </div>
+        </div>
+    -->
 </div>

@@ -153,7 +153,6 @@ $(document).ready(function () {
         window.open('https://www.google.com.ua/maps/place/' + $(this).text(), '_blank');
     });
 
-
     //scroll to anchor
     if($('header').is('.header-home')){
         $('.main-menu ul li a[href*="#"], .mobile-menu ul li a[href*="#"]').on('click', function(event){

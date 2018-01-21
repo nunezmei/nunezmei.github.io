@@ -9,7 +9,8 @@ $(document).ready(function () {
     function preload() {
         var $preloader = $('#page-preloader'),
             $spinner = $preloader.find('.spinner-loader');
-        $( window ).on('load', function() {
+        //$( window ).on('load', function() {
+        $(document).ready(function() {
             $spinner.fadeOut();
             $preloader.delay(500).fadeOut('slow');
         });
@@ -81,40 +82,6 @@ $(document).ready(function () {
         $(window).trigger('scroll');
     });
 
-
-    /*
-    //change lang cookie
-    function readCookie(name){
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for(var i=0;i < ca.length;i++){
-            var c = ca[i];
-            while (c.charAt(0)==' ') c = c.substring(1,c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-        }
-        return null;
-    }
-    function setLang() {
-        var cookieLang = readCookie('lang');
-        if(cookieLang){
-            $('.change-lng ul li a').each(function () {
-                if($(this).text() == cookieLang){
-                    $(this).parent('li').addClass('active');
-                }
-            });
-        }else{
-            document.cookie = 'lang=' + $('.change-lng ul li:first a').text();
-            $('.header .change-lng ul li:first').addClass('active');
-            $('.mob-menu-wrapper .change-lng ul li:first').addClass('active');
-        }
-    }
-    setLang();
-    $('.change-lng ul li a').on('click', function (event) {
-        event.preventDefault();
-        document.cookie = 'lang=' + $(this).text();
-        window.location = '/';
-    });
-    */
 
     //init isotope
     var $grid = $('.projects-wrapper').isotope({

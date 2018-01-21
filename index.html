@@ -108,18 +108,27 @@ description: UX designer based in Seattle, Washington currently working at Strin
                 margin-bottom: 30px;
             }
             .testimonial {
+                padding-right: 30px;
                 border-right: solid 1px gray;
+            }
+            .col-md-4:last-child .testimonial { 
+                border-right: none;
             }
             .quote {
                 font-style: italic;
                 font-weight:100;
+                min-height: 220px;
                 font-size: x-large;
             }
             .quote::before, .quote::after {
                 content: "\"";
                 font-size: xx-large;
             }
+            .quote::after {
+                display:block;
+            }
             .quote-from {
+                min-height: 70px;
                 padding-left: 40px;
                 font-size: large;
                 font-weight: bold;
@@ -129,6 +138,7 @@ description: UX designer based in Seattle, Washington currently working at Strin
                 content: "-";
             }
             .quote-from > span {
+                white-space: nowrap;
                 font-size: smaller;
             }
         </style>
@@ -143,13 +153,13 @@ description: UX designer based in Seattle, Washington currently working at Strin
             <div class="col-md-4">
                 <div class="testimonial">
                     <p class="quote">Despite not having a crystal clear vision for my web app, 
-                        the LPT Design Team (Lauren Jessen, Dom Martinez, and Mary Ann Denman) created 
-                        an outstanding working prototype. Working with them helped to clarify my vision 
+                        the LPT Design Team <!-- (Lauren Jessen, Dom Martinez, and Mary Ann Denman)--> created 
+                        an outstanding working prototype. <!--Working with them helped to clarify my vision 
                         and greatly enhanced the tool’s functionality. Because of their user research 
                         and testing, I am confident that my investment in development will create value 
                         for users. The team far exceeded my expectations, and I hope to work with them 
-                        on version 2.0.</p>
-                    <div class="quote-from">Kelly Bailey - <span>Client (Co-Founder and Product Manager) Loss Prevention Tools</span></div>
+                        on version 2.0.--></p>
+                    <div class="quote-from">Kelly Bailey - <span>Client - Loss Prevention Tools</span></div>
                 </div>
             </div>
             <div class="col-md-4">

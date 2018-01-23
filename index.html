@@ -108,18 +108,27 @@ description: UX designer based in Seattle, Washington currently working at Strin
                 margin-bottom: 30px;
             }
             .testimonial {
+                padding-right: 30px;
                 border-right: solid 1px gray;
+            }
+            .col-md-4:last-child .testimonial { 
+                border-right: none;
             }
             .quote {
                 font-style: italic;
                 font-weight:100;
+                min-height: 220px;
                 font-size: x-large;
             }
             .quote::before, .quote::after {
                 content: "\"";
                 font-size: xx-large;
             }
+            .quote::after {
+                display:block;
+            }
             .quote-from {
+                min-height: 70px;
                 padding-left: 40px;
                 font-size: large;
                 font-weight: bold;
@@ -129,10 +138,11 @@ description: UX designer based in Seattle, Washington currently working at Strin
                 content: "-";
             }
             .quote-from > span {
+                white-space: nowrap;
                 font-size: smaller;
             }
         </style>
-        <!--
+        
         <div class="row">
             <div class="col-12">
                 <h3>Testimonials</h3>
@@ -142,22 +152,31 @@ description: UX designer based in Seattle, Washington currently working at Strin
         <div class="row testimonials">
             <div class="col-md-4">
                 <div class="testimonial">
-                    <p class="quote">I think she did a great job.</p>
-                    <div class="quote-from">Kelly Bailey - <span>Client, Loss Prevention</span></div>
+                    <p class="quote">Despite not having a crystal clear vision for my web app, 
+                        the LPT Design Team <!-- (Lauren Jessen, Dom Martinez, and Mary Ann Denman)--> created 
+                        an outstanding working prototype. <!--Working with them helped to clarify my vision 
+                        and greatly enhanced the tool’s functionality. Because of their user research 
+                        and testing, I am confident that my investment in development will create value 
+                        for users. The team far exceeded my expectations, and I hope to work with them 
+                        on version 2.0.--></p>
+                    <div class="quote-from">Kelly Bailey - <span>Client - Loss Prevention Tools</span></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="testimonial">
-                    <p class="quote">I think she did a great job.</p>
-                    <div class="quote-from">Kelly Bailey</div>
+                    <p class="quote">Working with Mary Ann is the best. She was the researcher on our team project.
+                        She knows her job and tackles it head on, giving you 100%. She is also super easy to collaborate
+                        with. She is super creative in her approaches to challenges. Mary Ann rocks!</p>
+                    <div class="quote-from">Todd Agnello - <span>Interaction Designer - GeekWire Team</span></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="testimonial">
-                    <p class="quote">I think she did a great job.</p>
-                    <div class="quote-from">Kelly Bailey</div>
+                    <p class="quote">Books! And cleverness! There are more important things — friendship 
+                        and bravery and — oh Mary Ann — be careful!</p>
+                    <div class="quote-from">Hermione Granger</div>
                 </div>
             </div>
         </div>
-    -->
+    
 </div>

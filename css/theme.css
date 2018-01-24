@@ -795,5 +795,19 @@ textarea.site-input:hover, textarea.site-input:focus {
   font-size: smaller;  
 }
 
+#showmoreImg {
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#showmoreImg:hover {
+  text-decoration: underline;
+}
+
+.imgfig img {
+  border: solid 3px black;
+  padding: 3px;
+}
 
 /*# sourceMappingURL=maps/theme.css.map */

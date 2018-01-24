@@ -56,7 +56,7 @@ canonical: project-sixth-world
             <h3>Final Design</h3>
                 <div class="margin-box">
                         <div class="img-box">
-                                <div class="threebox" style="display: flex">
+                                <div class="imgbox">
                                     {% include img.html
                                         image="media/projects/sixth.world.original" %}
                                     {% include img.html
@@ -101,7 +101,7 @@ canonical: project-sixth-world
                                     <img src="media/projects/sixth.world.competitive.jpg"> 
                                 </figure>
                             </div>
-                    <h3>Interviews & Task Analysis</h3>
+                    <h3>Interviews &amp; Task Analysis</h3>
                             <p>I interviewed users ages ranging from upper 30’s, upper 40’s and early 60’s, 3 in 
                                 person and 1 over the phone to gain a sense of their online and physical experience 
                                 in terms of deciding to select a place to have a massage, scheduling an appointment, 
@@ -173,10 +173,9 @@ canonical: project-sixth-world
                           </p>
                 <h3>Persona</h3>
                     <div class="img-box">
-                        <figure>
-                            <img src="media/projects/sixth.world.persona.jpg"> 
-                            <figcaption>I chose and revised a pre-made persona from a selection provided by the school for design tool usage.</figcaption>
-                        </figure>
+                            {% include img.html one=true
+                                image="media/projects/sixth.world.persona"
+                                caption="I chose and revised a pre-made persona from a selection provided by the school for design tool usage." %}
                     </div>
                 
                 <h3>Scenario Development</h3>
@@ -189,7 +188,7 @@ canonical: project-sixth-world
                         website. She closes her pc and makes a call. No one answers the phone.
                     </p> 
                         <div class="img-box">
-                            <div class="fivebox" style="display: flex">
+                            <div class="imgbox">
                                 {% include img.html
                                     image="media/projects/sixth.world.storyboard1" %}
                                 {% include img.html
@@ -234,7 +233,7 @@ canonical: project-sixth-world
                          was to help improve some of the issues users mentioned with the present website.
                     </p>  
                     <div class="img-box">
-                            <div class="twobox" style="display: flex">
+                            <div class="imgbox">
                                 {% include img.html
                                     image="media/projects/sixth.world.cardsort1" %}
                                 {% include img.html
@@ -252,7 +251,7 @@ canonical: project-sixth-world
                                         and other massage websites but eventually moved to a unique and simplified user experience that Sixth World 
                                         Massage Therapy could embrace.
                                     </p>
-                                    <div class="threebox" style="display: flex">
+                                    <div class="imgbox">
                                     {% include img.html
                                         image="media/projects/sixth.world.sketching1" %}
                                     {% include img.html
@@ -265,7 +264,7 @@ canonical: project-sixth-world
                                             prepare for testing.
                                         </p>
                                         <h3>Primary Screens</h3>
-                                        <div class="threebox" style="display: flex">
+                                        <div class="imgbox" >
                                             {% include img.html
                                                 image="media/projects/sixth.world.aboutus"
                                                 caption="Home" %}
@@ -275,12 +274,13 @@ canonical: project-sixth-world
                                                 caption="Massages List" %}
 
                                             {% include img.html
-                                                image="media/projects/sixth.world.productdetails" %}
+                                                image="media/projects/sixth.world.productdetails"
+                                                caption="Product Details" %}
                                         </div>
-                                        <div class="threebox" style="display: flex">
+                                        <div class="imgbox" >
                                             {% include img.html
                                                 image="media/projects/sixth.world.bookanappointment"
-                                                caption="Book an appointment." %}
+                                                caption="Book an appointment" %}
 
                                             {% include img.html
                                                 image="media/projects/sixth.world.bookingconfirmationmessage"
@@ -290,9 +290,10 @@ canonical: project-sixth-world
                                                 image="media/projects/sixth.world.contactus"
                                                 caption="Contact Us" %}
                                         </div>
-                                        <div class="threebox" style="display: flex">    
+                                        <div class="imgbox" >    
                                             {% include img.html
-                                                image="media/projects/sixth.world.guestsecurecheckout" %}
+                                                image="media/projects/sixth.world.guestsecurecheckout" 
+                                                caption="Guest Secure Checkout" %}
 
                                             {% include img.html
                                                 image="media/projects/sixth.world.signin"
@@ -303,7 +304,7 @@ canonical: project-sixth-world
                                                 caption="Join In/Register" %}
                                         </div>
                                         <h3>Product Discovery Flow: Round One</h3>
-                                        <div class="threebox" style="display: flex">    
+                                        <div class="imgbox" >    
                                             {% include img.html
                                                 image="media/projects/sixth.world.aboutus" %}
                                             {% include img.html
@@ -326,7 +327,7 @@ canonical: project-sixth-world
                                                 tiny mistakes can cost business dearly- in fact one poorly  designed button might 
                                                 cost $300 million as the Jarod Spool mentioned.
                                             </p>
-                                            <div class="twobox" style="display: flex">    
+                                            <div class="imgbox" >    
                                                 {% include img.html
                                                     image="media/projects/sixth.world.productwithoutprice" %}
                                                 {% include img.html
@@ -340,7 +341,7 @@ canonical: project-sixth-world
                                                 communicate, and what I wanted them to do amongst other things. Font size impacts 
                                                 both accessibility and usability.
                                             </p>
-                                            {% include img.html
+                                            {% include img.html one=true
                                                 image="media/projects/sixth.world.fontsizesmall" %}
 
                                             <h3>Iterations:Booking Confirmation Message Hard to Read Because Of Dark Fill Color </h3>
@@ -352,9 +353,13 @@ canonical: project-sixth-world
                                                 though this was a minor change, color is an important form of communication. It can 
                                                 sway thinking, change actions, and cause reactions.
                                             </p> 
-                                            {% include img.html
-                                                image="media/projects/sixth.world.darkhardtoread1" %}
-
+                                            <div class="imgbox" >    
+                                                {% include img.html
+                                                    image="media/projects/sixth.world.darkhardtoread1" %}
+                                                {% include img.html
+                                                    image="media/projects/sixth.world.darkhardtoread2" %}
+                                            </div>
+    
                                          <h3>Iterations:Missing Input Pop Up Screen Lacks Empathy</h3>
                                             <p>The importance of the URL in the pop-up screen was questioned by one of my users. It 
                                                 was also mentioned that the message prompt was unfriendly and too demanding. I made 
@@ -365,7 +370,7 @@ canonical: project-sixth-world
                                                 image="media/projects/sixth.world.lackempathy" %}
 
                                             <h3>Visual Mockup</h3>
-                                        <div class="threebox" style="display: flex">    
+                                        <div class="imgbox" >    
                                             {% include img.html
                                                 image="media/projects/sixth.world.aboutusmock2" %}
                                             {% include img.html

@@ -14,7 +14,7 @@ canonical: project-apartment-alerts
                         <h1>Apartment A!erts</h1>
                     </div>
                     <div class="project-single-desc">
-                        <p>This was done as a design concept for a client whose cause is for affordable housing.</p>
+                        <p>This was done as a design concept for a client who is an affordable housing advocate.</p>
                         <br>
                         <p>A design of Apartment A!erts website, to deliver the Minimum Viable Product
                            focusing on design trends and great user experience for  Apartment A!erts target users. </p>
@@ -54,12 +54,12 @@ canonical: project-apartment-alerts
                             {% include img.html
                                 image="media/projects/apartment.alert.challenge"
                                 caption="Figure 1. Uneven ratio of appropriate matches made within 60 days between available housing
-                                and qualifying families." %}
+                                and qualifying families" %}
 
                             {% include img.html
                                 image="media/projects/apartment.alert.theprocess"
                                 caption="Figure 2. Convoluted process that looks and feels a lot like this (US government slide
-                                of Afghanistan stability)." %}
+                                of Afghanistan stability)" %}
                         </div>
                     </div>        
                 </div>
@@ -74,13 +74,13 @@ canonical: project-apartment-alerts
                           <div class="margin-box">               
                              <div class="img-box">
                                  <div class="threebox" style="display: flex">
-                                    {% include img.html
+                                    {% include img.html large=true
                                         image="media/projects/apartment.alert.homepage"
                                         caption="Homepage" %}
-                                    {% include img.html
+                                    {% include img.html large=true
                                         image="media/projects/apartment.alert.tenant"
                                         caption="Tenant" %}
-                                    {% include img.html
+                                    {% include img.html large=true
                                         image="media/projects/apartment.alert.pm"
                                         caption="Property Manager" %}
                                  </div>
@@ -155,11 +155,11 @@ canonical: project-apartment-alerts
                                 caption="Figure 1.Affinity diagramming" %}
                             {% include img.html
                                 image="media/projects/apartment.alert.affinity"
-                                caption="Figure 2.Card sorting with the team." %}
+                                caption="Figure 2.Card sorting with the team" %}
 
                             {% include img.html
                                 image="media/projects/apartment.alert.trelloboard"
-                                caption="Figure 3. More cards." %}
+                                caption="Figure 3. More cards" %}
                         </div>
                         <h4>General Insights</h4> 
                             <ul>
@@ -169,9 +169,10 @@ canonical: project-apartment-alerts
                                 <li>The more you know about legal information and taxes, the better</li>      
                             </ul> 
                                 <div class="img-box">
-                                    <figure>
-                                        <img src="media/projects/apartment.alert.generalinsights.jpg">     
-                                    </figure>
+                                        {% include img.html one=true
+                                            image="media/projects/apartment.alert.generalinsights"
+                                            caption="General Insights"%}
+                                    
                                 </div>
                         <h4>Desires (Tenant)</h4> 
                             <ul>
@@ -191,17 +192,19 @@ canonical: project-apartment-alerts
                     <h3>Persona</h3>
                 <div class="opacity-box">
                     <div class="img-box">
-                        <figure>
-                            <img src="media/projects/apartment.alert.personauserjourney.jpg">
-                            <figcaption>Sofia is a single mother of 2. Her rent has increased. She can no longer afford it. 
+                            {% include img.html
+                                image="media/projects/apartment.alert.personauserjourney"
+                                caption="Persona / User Journey"%}
+
+                            <p>Sofia is a single mother of 2. Her rent has increased. She can no longer afford it. 
                                 Her lease will be up in 5 months, and she needs to find an affordable home for her and her 
                                 2 children quickly.She learns about Apartment A!erts from her case worker or ad somewhere, 
                                 and may be through a friend. She signs up to receive Apartment text alerts to phone. She 
                                 then answers preapplication questions. She gets notified of next steps if there is one. 
                                 She'll also get notification if she's not approved for subsidized housing and other 
                                 alternative options she can do. Otherwise, she'll get another alert when there's an opening. 
-                                Later on, she is able to begin her application process thanks to Apartment A!erts.</figcaption>    
-                        </figure>
+                                Later on, she is able to begin her application process thanks to Apartment A!erts.
+                            </p>           
                     </div>
                 </div>
                     <h3>Sytle Guide</h3>
@@ -244,30 +247,27 @@ canonical: project-apartment-alerts
             </div>     
                  <h3>Final Wireframes &amp; High Fidelity Mock Ups</h3>
                  <div class="opacity-box">
-                             
-                    <div class="img-box">
-                        <div class="threebox" style="display: flex">
-                            <figure>
-                                <img src="media/projects/apartment.alert.wire1.jpg" style="width:100%">
-                                <figcaption>Homepage and Tenant Sign up</figcaption>
-                            </figure>
-                            <figure>
-                                <img src="media/projects/apartment.alert.wire2.jpg" style="width:100%">
-                                <figcaption>Tenant Sign up</figcaption>
-                            </figure>
-                            <figure>
-                                <img src="media/projects/apartment.alert.wire3.jpg" style="width:100%">
-                                <figcaption>Tenant Sign Up</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
+                            <div class="img-box">
+                                    <div class="threebox" style="display: flex">
+                                       {% include img.html large=true
+                                           image="media/projects/apartment.alert.wire1"
+                                           caption="Homepage and Tenant Sign up" %}
+                                       {% include img.html large=true
+                                           image="media/projects/apartment.alert.wire2"
+                                           caption="Tenant Sign up Screens 2-4" %}
+                                       {% include img.html large=true
+                                           image="media/projects/apartment.alert.wire3"
+                                           caption="Tenant Sign up Screens 5-7" %}
+                                    </div>
+                            </div> 
+                  </div>
+                
                 <h3>Text Messages</h3>
                 <div class="opacity-box">
                     <div class="img-box">
                         <figure>
                             <img src="media/projects/apartment.alert.textmessages.jpg">
-                            <figcaption>Sample text message a user gets.</figcaption>    
+                            <figcaption>Sample text message a user gets</figcaption>    
                         </figure>
                     </div>
                 </div>

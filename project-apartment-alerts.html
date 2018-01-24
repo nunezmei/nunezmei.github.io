@@ -50,19 +50,16 @@ canonical: project-apartment-alerts
                 <div class="margin-box">
                     <h2>Problem</h2>
                     <div class="opacity-box">
-                        <div class="img-box">
-                            <figure>
-                                <img src="media/projects/apartment.alert.challenge.jpg"> 
-                            <figcaption>Figure 1. Uneven ratio of appropriate matches made within 60 days between available housing
-                                and qualifying families.</figcaption>    
-                            </figure>
-                        </div>    
-                        <div class="img-box">
-                            <figure>
-                                <img src="media/projects/apartment.alert.theprocess.jpg"> 
-                                <figcaption>Figure 2. Convoluted process that looks and feels a lot like this (US government slide
-                                    of Afghanistan stability).</figcaption>    
-                            </figure>
+                        <div class="twobox" style="display: flex">    
+                            {% include img.html
+                                image="media/projects/apartment.alert.challenge"
+                                caption="Figure 1. Uneven ratio of appropriate matches made within 60 days between available housing
+                                and qualifying families." %}
+
+                            {% include img.html
+                                image="media/projects/apartment.alert.theprocess"
+                                caption="Figure 2. Convoluted process that looks and feels a lot like this (US government slide
+                                of Afghanistan stability)." %}
                         </div>
                     </div>        
                 </div>
@@ -77,18 +74,15 @@ canonical: project-apartment-alerts
                           <div class="margin-box">               
                              <div class="img-box">
                                  <div class="threebox" style="display: flex">
-                                    <figure>
-                                       <img src="media/projects/apartment.alert.homepage.jpg" style="width:100%">
-                                         <figcaption>Homepage</figcaption>
-                                    </figure>
-                                    <figure>
-                                       <img src="media/projects/apartment.alert.tenant.jpg" style="width:100%">
-                                         <figcaption>Tenant</figcaption>
-                                    </figure>
-                                    <figure>
-                                      <img src="media/projects/apartment.alert.pm.jpg" style="width:100%">
-                                         <figcaption>Property Manager</figcaption>
-                                    </figure>
+                                    {% include img.html
+                                        image="media/projects/apartment.alert.homepage"
+                                        caption="Homepage" %}
+                                    {% include img.html
+                                        image="media/projects/apartment.alert.tenant"
+                                        caption="Tenant" %}
+                                    {% include img.html
+                                        image="media/projects/apartment.alert.pm"
+                                        caption="Property Manager" %}
                                  </div>
                              </div>
                          </div>
@@ -154,25 +148,19 @@ canonical: project-apartment-alerts
                                     I wish there was an easier way for people to get a roof over their heads.
                                     <span>Vince, Downtown Seattle Association Ambassador</span>
                                 </blockquote>
-                            </div>
-                        <div class="img-box">
-                                <figure>
-                                    <img src="media/projects/apartment.alert.affinity2.jpg">
-                                <figcaption>Figure 1.Affinity diagramming</figcaption>    
-                                </figure>
-                            </div>    
-                            <div class="img-box">
-                                <figure>
-                                    <img src="media/projects/apartment.alert.affinity.jpg">
-                                    <figcaption>Figure 2.Card sorting with the team.</figcaption>    
-                                </figure>
-                            </div> 
-                            <div class="img-box">
-                                    <figure>
-                                        <img src="media/projects/apartment.alert.trelloboard.jpg">
-                                        <figcaption>Figure 2.More cards.</figcaption>    
-                                    </figure>
-                                </div>
+                        </div>
+                        <div class="threebox" style="display: flex">
+                            {% include img.html
+                                image="media/projects/apartment.alert.affinity2"
+                                caption="Figure 1.Affinity diagramming" %}
+                            {% include img.html
+                                image="media/projects/apartment.alert.affinity"
+                                caption="Figure 2.Card sorting with the team." %}
+
+                            {% include img.html
+                                image="media/projects/apartment.alert.trelloboard"
+                                caption="Figure 3. More cards." %}
+                        </div>
                         <h4>General Insights</h4> 
                             <ul>
                                 <li>Main categories/problem areas: collecting criminal, employment, 

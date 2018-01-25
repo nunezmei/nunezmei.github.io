@@ -1,7 +1,7 @@
 ---
 layout: default
 pageTitle: Apartment A!erts UX Design
-nextUrl: project-geekwire
+nextUrl: project-sixth-world
 canonical: project-apartment-alerts
 ---
 
@@ -25,13 +25,14 @@ canonical: project-apartment-alerts
                     <div class="opacity-box">
                             <div class="img-box">
                                     <p>Seattle is the fastest growing city in the nation with more than 1,000
-                                    people moving here every week. As a result, rents rose 57% in King 
-                                    county in the past 6 years which led to more need for affordable 
-                                    housing.This very fact started &amp inspired the client in the conception 
-                                    of Apartment A!erts.</p> 
-                                    <figure>
-                                        <img src="media/projects/apartment.alert.overviewunitedway.jpg">  
-                                    </figure>
+                                       people moving here every week. As a result, rents rose 57% in King 
+                                       county in the past 6 years which led to more need for affordable 
+                                       housing.This very fact started &amp; inspired the client in the conception 
+                                       of Apartment A!erts.</p> 
+                                       <div class="imgbox">    
+                                            {% include img.html
+                                                image="media/projects/apartment.alert.overviewunitedway" %}
+                                      </div>        
                                 </div>    
                         <br>
                         <p>Apartment Alerts is an online tool that is all about matching affordable housing and qualifying tenants. 
@@ -50,16 +51,14 @@ canonical: project-apartment-alerts
                 <div class="margin-box">
                     <h2>Problem</h2>
                     <div class="opacity-box">
-                        <div class="twobox" style="display: flex">    
-                            {% include img.html
+                        <div class="imgbox">    
+                            {% include img.html 
                                 image="media/projects/apartment.alert.challenge"
-                                caption="Figure 1. Uneven ratio of appropriate matches made within 60 days between available housing
-                                and qualifying families" %}
+                                caption="Figure 1. Uneven ratio of appropriate matches made within 60 days between available housing and qualifying families" %}
 
                             {% include img.html
                                 image="media/projects/apartment.alert.theprocess"
-                                caption="Figure 2. Convoluted process that looks and feels a lot like this (US government slide
-                                of Afghanistan stability)" %}
+                                caption="Figure 2. Convoluted process that looks and feels a lot like this (US government slide of Afghanistan stability)" %}
                         </div>
                     </div>        
                 </div>

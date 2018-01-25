@@ -58,13 +58,11 @@ canonical: project-geekwire
                        <li>Mock up &amp; Prototype</li>
                     </ol>
                     <h3>Final Design</h3>
-                       <div class="img-box">
-                            <figure>
-                            <img src="media/projects/geekwire.b-a.jpg" 
-                                alt="geekwire before and after redesign" />
-                            <figcaption>Figure 1. GeekWire app before and after redesign.</figcaption>    
-                            </figure>
-                       </div>            
+                    <div class="imgbox">    
+                            {% include img.html
+                                image="media/projects/geekwire.b-a"
+                                caption="Figure 1. GeekWire app before and after redesign" %}
+                    </div>            
                 </div>
 
                 <div class="margin-box margin-p">
@@ -374,7 +372,8 @@ canonical: project-geekwire
                                     {% include img.html large=true one=true
                                         image="media/projects/geekwire.findingsreport1"
                                         caption="Findings Report 1" %}
-                            </div>  
+                            </div> 
+                            <p>Calculating the App's Usability Score:</p> 
                             <p>Odd # questions score + Even # questions score = (18+20)= 38</p>
                             <p>38 x 2.5= 95</p>
                             <p>Post-Test Survey (SUS Score)= 95 Acceptable</p>
@@ -454,12 +453,12 @@ canonical: project-geekwire
                             account is connected to. We realized that some users might prefer posting their comments anonymously within 
                             the app. So, we made the necessary changes.
                         </p>
-                        <div class="img-box">
-                                     <figure>
-                                        <img src="media/projects/geekwire.finalwire.mockup.jpg"> 
-                                        <figcaption>Figure 1. Home screen wire and mockup.</figcaption>    
-                                     </figure>
-                        </div> 
+                        <div class="imgbox">    
+                                {% include img.html
+                                    image="media/projects/geekwire.finalwire.mockup"
+                                    caption="Home screen wire and mockup" %}
+                        </div>  
+                        
                     <h3>Prototype</h3>  
                     <iframe style="width:100%;min-height:50vh" src="https://www.youtube.com/embed/pvzESzjjxME" frameborder="0" gesture="media" 
                     allow="encrypted-media" allowfullscreen></iframe>

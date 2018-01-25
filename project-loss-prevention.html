@@ -18,8 +18,8 @@ canonical: project-loss-prevention
                         <p>This was done as a design concept for a client.</p>
                         <br>
                         <p>Design of Loss Prevention Tools, with emphasis on an MVP focusing on user ​research
-                           wireframes, clickable prototype, user stories, and flows to ​validate ​client's approach ​for ​a ​new ​
-                           loss prevention ​web ​app.</p>
+                           wireframes, clickable prototype, user stories, and flows to ​validate ​client's approach
+                           for ​a ​new ​loss prevention ​web ​app.</p>
                 </div>
                 <div class="margin-box margin-p">
                     <h2>Overview</h2>
@@ -29,7 +29,7 @@ canonical: project-loss-prevention
                            assist loss prevention experts with analyzing data and case management.</p>
                            <br>
                         <p>For this concept piece, I worked on a team of three and served as the Project Manager, Information
-                            Architect, and Visual Designer.</p>
+                           Architect, and Visual Designer.</p>
                     <h4>Goals:</h4>
                         <ul>    
                             <li>Create a more intuitive data analysis web app for analyzing internal theft within retailers.</li>
@@ -53,18 +53,29 @@ canonical: project-loss-prevention
                             <li>Final Prototype</li>
                         </ul> 
                     <h3>Final Design</h3>
-                    <div class="img-box">
-                            <figure>
-                            <img src="media/projects/loss.prevention.b-a.jpg" 
-                                alt="geekwire before and after redesign" />
-                            <figcaption>Figure 1. Loss Prevention Tools app wireframe and final mockup.</figcaption>    
-                            </figure>
-                    </div> 
+                    <div class="imgbox">    
+                            {% include img.html
+                                image="media/projects/loss.prevention.b-a"
+                                caption="Loss Prevention Tools app wireframe and final mockup" %}
+                    </div>  
                 </div>
                
                <div class="margin-box margin-p">
                     <h2>Discovery</h2>
                     <div class="opacity-box"></div>
+                    <h3>Project Management</h3>
+                    <p>To manage the team in terms of task assignments and project plan creations, I made a spreadsheet
+                       as suggested by fellow team members. It guided me in conducting daily check-ins to make sure 
+                       every task decision related to the project was on track.A team meeting was also conducted prior
+                       to releasing everyone to do their assigned tasks. The purpose of this was to review the list of 
+                       tasks, deadlines, client, and team goals.Lastly, doing all of these provided that big picture 
+                       road map for where I am taking the team and how we are going to get the end goal. 
+                    </p>
+                    <div class="imgbox">    
+                            {% include img.html large=true one=true
+                                image="media/projects/loss.prevention.projectplan"
+                                caption="Project Planning" %}
+                    </div>            
                     <h3>Client Interview</h3>
                         <p>We compiled a list of questions about the company, business goals, and asked the client during kick
                            off meeting. The responses gave us great insight about the client and his specific goals for this 
@@ -86,7 +97,7 @@ canonical: project-loss-prevention
                             <li>Frequency of data varies from store to store, ranging from daily to weekly.</li>
                             <li>Data uploading varies, ranging from copying and pasting, IT uploading, and a real-time updated P.O.S.</li>
                         </ul>   
-                    <h3>Surprising Findings & Insights:</h3>
+                    <h3>Surprising Findings &amp; Insights:</h3>
                         <ul>
                             <li>4/4 users were unhappy with their current platform.</li>
                             <li>Not one platform used or one consistent standardized procedure.</li>
@@ -99,7 +110,7 @@ canonical: project-loss-prevention
                             <li>Ability to pull out certain results and organize them in ‘To Investigate’ and ‘Investigated’ folders
                                 within the dashboard.</li>        
                         </ul>
-                    <h3>The Problem & Solution</h3> 
+                    <h3>The Problem &amp; Solution</h3> 
                         <p>Those who work in loss prevention are finding it difficult to effectively upload and analyze data for 
                            specific internal theft categories with a tool that is price effective and tailored to their specific needs.</p>
                            <br>
@@ -114,19 +125,15 @@ canonical: project-loss-prevention
                         <p>Lauren developed 2 proto personas based on the initial user research. Richard, being the Director of Loss 
                             Prevention, was our primary user and Danielle, the Loss Prevention Associate, was the secondary target user.</p>
                             
-                                  
-                             <div class="img-box">
-                                 <div class="twobox" style="display: flex">
-                                    <figure>
-                                        <img src="media/projects/loss.prevention.persona1.jpg" style="width:100%">
-                                        <figcaption>Primary persona</figcaption>
-                                    </figure>
-                                    <figure>
-                                        <img src="media/projects/loss.prevention.persona2.jpg" style="width:100%">
-                                        <figcaption>Secondary persona</figcaption>
-                                    </figure> 
-                                </div>  
-                            </div>
+                            <div class="imgbox">    
+                                    {% include img.html
+                                        image="media/projects/loss.prevention.persona1"
+                                        caption="Primary persona" %}
+        
+                                    {% include img.html
+                                        image="media/projects/loss.prevention.persona2"
+                                        caption="Secondary persona" %}
+                                </div>     
                          <br>   
                         <p>The persona and scenario development helped to keep us on track as a team and prioritize the features to be added
                             to the web app. It also helped us in creating a particular flow a user might possibly take. 
@@ -134,17 +141,18 @@ canonical: project-loss-prevention
                         <br>
                         <p>As the visual designer, I sketched a storyboard to illustrate Richard’s challenges in using the current loss 
                             prevention tool his company provided.
-                        </p> 
-                        <div class="img-box">
-                                    <figure>
-                                        <img src="media/projects/loss.prevention.storyboard1.jpg" style="width:100%">
-                                    </figure> 
-                                    <p>This is based on a story of a Loss Prevention Director who happens to be Richard; he wants
-                                       to investigate an employee and uses the POS data that is fed into the security system to determine 
-                                       if that employee is committing fraud/theft. So you can see Richard is extremely overwhelmed with 
-                                       the amount of data he is looking at. He does not want to manually sift through the data. He needs 
-                                       help.He is so frustrated that he throws his hand up in the air.</p>  
-                        </div>
+                        </p>
+                        <div class="imgbox">    
+                                {% include img.html one=true
+                                    image="media/projects/loss.prevention.storyboard1"
+                                    caption="Storyboard 1" %}
+                        </div>   
+                               <p>This is based on a story of a Loss Prevention Director who happens to be Richard; he wants to investigate 
+                                  an employee and uses the POS data that is fed into the security system to determine if that employee is 
+                                  committing fraud/theft. So you can see Richard is extremely overwhelmed with the amount of data he is 
+                                  looking at. He does not want to manually sift through the data. He needs help.He is so frustrated &amp; he 
+                                  throws his hand up in the air.</p>  
+                        
                     <h3>Feature Prioritization</h3> 
                         <p>Based on the results of user research the team and I agreed that in order for this to be a usable app, this 3 success 
                             metrics had to be considered:
@@ -157,10 +165,11 @@ canonical: project-loss-prevention
                             <br>
                         <div class="img-box">   
                                     <p>With the solution statement created, I continued the storyboard with this:</p> 
-                                    <br>
-                                <figure>
-                                    <img src="media/projects/loss.prevention.storyboard2.jpg" style="width:100%">
-                                </figure>
+                                    <div class="imgbox">    
+                                            {% include img.html one=true
+                                                image="media/projects/loss.prevention.storyboard2"
+                                                caption="Storyboard 2" %}
+                                    </div>     
                                 <p>You can see Richard here wondering about a better tool on the market that will help him analyze data 
                                    and manage cases. Later, you notice him using the less complicated and straightforward Loss Prevention 
                                    Tool web app with a big smile on his face. Helps him better in analyzing internal theft efficiently. 
@@ -173,37 +182,30 @@ canonical: project-loss-prevention
                             that can help users achieve their end goal, and to allow them to easily understand how to navigate, giving them 
                             a positive experience. I started with some sketches on paper before I came up with the final one.</p>
                            
-                           
-                             <div class="img-box">
-                                 <div class="twobox" style="display: flex">
-                                <figure>
-                                    <img src="media/projects/loss.prevention.sitemap1.jpg" style="width:100%">
-                                    <figcaption>Sitemap in paper</figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="media/projects/loss.prevention.sitemap2.jpg" style="width:100%">
-                                    <figcaption>Final Sitemap</figcaption>
-                                </figure> 
-                            </div>  
-                        </div> 
+                            <div class="imgbox">    
+                                    {% include img.html
+                                        image="media/projects/loss.prevention.sitemap1"
+                                        caption="Sitemap in paper" %}
+        
+                                    {% include img.html
+                                        image="media/projects/loss.prevention.sitemap2"
+                                        caption="Final Sitemap" %}
+                                </div>     
 
                         <p>After some analysis and careful thought, I went on to develop a user need’s focused flow which can help Richard 
                         and Danielle  to complete their task, achieve their goals and feel better about it. Tasks include uploading a file, 
                         filtering data, running report, viewing analyzed report, saving it, sharing the data and exporting it. I started the 
                         initial user flows in paper and  finalized it via OmniGraffle.</p> 
-                            
-                        <div class="img-box">
-                            <div class="twobox" style="display: flex">
-                                <figure>
-                                    <img src="media/projects/loss.prevention.userflow1.jpg" style="width:100%">
-                                    <figcaption>User flow in paper</figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="media/projects/loss.prevention.userflow2.jpg" style="width:100%">
-                                    <figcaption>Final user flow</figcaption>
-                                </figure> 
-                            </div>  
-                        </div> 
+                        
+                        <div class="imgbox">    
+                                {% include img.html
+                                    image="media/projects/loss.prevention.userflow1"
+                                    caption="User flow in paper" %}
+    
+                                {% include img.html
+                                    image="media/projects/loss.prevention.userflow2"
+                                    caption="Final user flow" %}
+                            </div>     
                 </div>
 
                 <div class="margin-box margin-p">
@@ -212,29 +214,28 @@ canonical: project-loss-prevention
                     <h3>Sketching</h3> 
                     <p>Dom as the Interaction Designer led the creation of some rough sketches for possible featured screens. I also provided my input 
                         as we did rounds of whiteboarding.</p> 
-                    <div class="img-box">
-                            <div style="display: flex">
-                                <figure>
-                                    <img src="media/projects/loss.prevention.sketching1.jpg" style="width:100%">
-                                </figure>
-                            </div>
-                    </div>            
+                        <div class="imgbox">    
+                                {% include img.html one=true
+                                    image="media/projects/loss.prevention.sketching1"
+                                    caption="Sketching 1" %}
+                        </div>     
+                        
                     <h3>Design Studio</h3>
                         <p>A major decision my group mates and I thought of was to conduct a design studio led by Dom the Interaction Designer. The purpose 
                             of this was to understand the client's views and to clearly define the key screens the web app needed. It was a vital 
                             brainstorming, and learning experience for myself and the team as this helped in knowing what major components needed to be 
                             displayed for the web app design.
                         </p>
-                        <div class="img-box">
-                                <div class="twobox" style="display: flex">
-                                    <figure>
-                                        <img src="media/projects/loss.prevention.designstudio1.jpg" style="width:100%">
-                                    </figure>
-                                    <figure>
-                                        <img src="media/projects/loss.prevention.designstudio2.jpg" style="width:100%">
-                                    </figure> 
-                                </div>  
-                        </div> 
+                        <div class="imgbox">    
+                                {% include img.html
+                                    image="media/projects/loss.prevention.designstudio1"
+                                    caption="Design studio" %}
+    
+                                {% include img.html
+                                    image="media/projects/loss.prevention.designstudio2"
+                                    caption="Client &amp; team in action" %}
+                            </div>    
+                        
                     <h3>Wireframes</h3> 
                         <p>As the interaction designer, Dom made an initial wireframes. As soon as he was done, he handed it over to Lauren for initial user testing. 
                             It was challenging to find target users. It was more hard to convince any available Loss Prevention Specialist to test the screens. 
@@ -247,116 +248,121 @@ canonical: project-loss-prevention
                     <h3>Visual Design &amp; Mock Up</h3> 
                         <p>As the Visual Designer of the group without any good background of visual design, I had to challenge myself by doing the “Branding Challenge’ I found online. 
                             This helped me in incorporating the right colors, typography and more into the wireferames. Here is my report:</p>
-                        <div class="img-box">
-                            <div class="twobox" style="display: flex">
-                                <figure>
-                                    <img src="media/projects/loss.prevention.moodboard1.jpg" style="width:100%">
-                                    <figcaption>Moodboard1</figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="media/projects/loss.prevention.moodboard2.jpg" style="width:100%">
-                                    <figcaption>Moodboard2</figcaption>
-                                </figure> 
+                            <div class="imgbox">    
+                                    {% include img.html
+                                        image="media/projects/loss.prevention.moodboard1"
+                                        caption="Moodboard 1" %}
+        
+                                    {% include img.html
+                                        image="media/projects/loss.prevention.moodboard2"
+                                        caption="Moodboard 2" %}
+                                </div> 
+                            <br>
+                            <div class="imgbox">    
+                                    {% include img.html one=true
+                                        image="media/projects/loss.prevention.colors"
+                                        caption="Colors" %}
                             </div>
-                        </div>  
-                        <div class="img-box">
-                                <figure>
-                                    <img src="media/projects/loss.prevention.colors.jpg" style="width:100%">
-                                        <figcaption>Colors</figcaption>
-                                </figure> 
-                        </div>  
-                    
-                        <div class="img-box">
-                                <figure>
-                                    <img src="media/projects/loss.prevention.typography.jpg" style="width:100%">
-                                        <figcaption>Typography</figcaption>
-                                </figure>   
-                        </div>
-                        <div class="img-box">
-                                <figure>
-                                    <img src="media/projects/loss.prevention.images.jpg" style="width:100%">
-                                        <figcaption>Images</figcaption>
-                                </figure>   
-                        </div>
-                        <div class="img-box">
-                                <figure>
-                                        <img src="media/projects/loss.prevention.finallogo.jpg" style="width:100%">
-                                        <figcaption>Final Logo</figcaption>
-                                    </figure>  
-                        </div>
-                        <div class="img-box">
-                                <figure>
-                                        <img src="media/projects/loss.prevention.icons.jpg" style="width:100%">
-                                        <figcaption>Icons</figcaption>
-                                    </figure>  
-                        </div>
-                        <div class="img-box">
-                                <figure>
-                                        <img src="media/projects/loss.prevention.radiobuttons.jpg" style="width:100%">
-                                        <figcaption>Radio Buttons &amp Checkboxes</figcaption>
-                                    </figure>  
-                        </div>    
-                        <div class="img-box">
-                                <figure>
-                                        <img src="media/projects/loss.prevention.formfields.jpg" style="width:100%">
-                                        <figcaption>Form Fields</figcaption>
-                                    </figure>  
+                            <br> 
+                            <div class="imgbox">    
+                                    {% include img.html one=true
+                                        image="media/projects/loss.prevention.typography"
+                                        caption="Typography" %}
+                            </div>
+                            <br> 
+                            <div class="imgbox">    
+                                    {% include img.html one=true
+                                        image="media/projects/loss.prevention.images"
+                                        caption="Images" %}
+                            </div>
+                            <br> 
+                            <div class="imgbox">    
+                                    {% include img.html one=true
+                                        image="media/projects/loss.prevention.finallogo"
+                                        caption="Final Logo" %}
+                            </div>
+                            <br> 
+                            <div class="imgbox">    
+                                    {% include img.html one=true
+                                        image="media/projects/loss.prevention.icons"
+                                        caption="Icons" %}
+                            </div>
+                            <br>
+                            <div class="imgbox">    
+                                    {% include img.html one=true
+                                        image="media/projects/loss.prevention.radiobuttons"
+                                        caption="Radio Buttons &amp; Checkboxes" %}
+                            </div>
+                            <br> 
+                            <div class="imgbox">    
+                                    {% include img.html one=true
+                                        image="media/projects/loss.prevention.formfields"
+                                        caption="Form Fields" %}
+                            </div>
+                            <br> 
+                            <div class="imgbox">    
+                                    {% include img.html one=true
+                                        image="media/projects/loss.prevention.mainbuttons"
+                                        caption="Main Buttons" %}
+                            </div>
+                            <br>
+                            <div class="imgbox">    
+                                    {% include img.html one=true
+                                        image="media/projects/loss.prevention.showhidetoggle"
+                                        caption="Show / Hide Toggle" %}
+                            </div>
+                            <br>
+                            <div class="imgbox">    
+                                    {% include img.html one=true
+                                        image="media/projects/loss.prevention.adddropdownlist"
+                                        caption="Add / Drop-down List" %}
+                            </div>
+                            <br> 
+                            <div class="imgbox">    
+                                    {% include img.html one=true
+                                        image="media/projects/loss.prevention.fileupload"
+                                        caption="File Upload" %}
+                            </div>
+                            <br>
+                            <div class="imgbox">    
+                                    {% include img.html one=true
+                                        image="media/projects/loss.prevention.callout"
+                                        caption="Callout" %}
+                            </div>
+                            <br>        
+                             
+                         
+                        
+                       
+                        
+                        
+                        
+                        
+                        
+                       
+                    <h3>Final Mock Up</h3> 
+                    <div class="imgbox">    
+                            {% include img.html
+                                image="media/projects/loss.prevention.homewire"
+                                caption="Home screen" %}
+
+                            {% include img.html
+                                image="media/projects/loss.prevention.wire2"
+                                caption="Reports screen" %}
                         </div>     
-                        <div class="img-box">
-                                <figure>
-                                        <img src="media/projects/loss.prevention.mainbuttons.jpg" style="width:100%">
-                                        <figcaption>Main Buttons</figcaption>
-                                    </figure>  
-                        </div>
-                        <div class="img-box">
-                                <figure>
-                                        <img src="media/projects/loss.prevention.showhidetoggle.jpg" style="width:100%">
-                                        <figcaption>Show / Hide Toggle</figcaption>
-                                    </figure>  
-                        </div> 
-                        <div class="img-box">
-                                <figure>
-                                        <img src="media/projects/loss.prevention.adddropdownlist.jpg" style="width:100%">
-                                        <figcaption>Add / Drop-down List</figcaption>
-                                    </figure>  
-                        </div> 
-                        <div class="img-box">
-                                <figure>
-                                        <img src="media/projects/loss.prevention.fileupload.jpg" style="width:100%">
-                                        <figcaption>File Upload</figcaption>
-                                </figure>  
-                        </div> 
-                        <div class="img-box">
-                                <figure>
-                                        <img src="media/projects/loss.prevention.callout.jpg" style="width:100%">
-                                        <figcaption>Callout</figcaption>
-                                </figure>  
-                        </div>         
-                    <h3>Final Mock Up</h3>    
-                    <div class="img-box">
-                            <div class="twobox" style="display: flex">
-                                <figure>
-                                    <img src="media/projects/loss.prevention.homewire.jpg" style="width:100%">
-                                    <figcaption>Home screen</figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="media/projects/loss.prevention.wire2.jpg" style="width:100%">
-                                    <figcaption>Reports screen</figcaption>
-                                </figure> 
-                            </div>  
-                    </div>
-                    <div class="img-box">
-                            <div class="twobox" style="display: flex">
-                            <figure>
-                                <img src="media/projects/loss.prevention.wire3.jpg" style="width:100%">
-                                <figcaption>Sample Report Display</figcaption>
-                            </figure>
-                            <figure>
-                                <img src="media/projects/loss.prevention.wire4.jpg" style="width:100%">
-                                <figcaption>Investigation</figcaption>
-                            </figure> 
-                        </div>  
-                    </div>
+                    <br>
+                    <div class="imgbox">    
+                            {% include img.html
+                                image="media/projects/loss.prevention.wire3"
+                                caption="Sample Report Display" %}
+
+                            {% include img.html
+                                image="media/projects/loss.prevention.wire4"
+                                caption="Investigation" %}
+                        </div>     
+                    <br>
+
+                    
                     <h3>Prototype</h3>
                     <div class="img-box">
                             <figure>
@@ -384,18 +390,18 @@ canonical: project-loss-prevention
                                     easy for me to fulfill it.</li>
                                 <li>I initially wanted to take on the Interaction Design role because I think 
                                     that this discipline of UX Design is somewhat my weakest. In order for me to
-                                    improve in that aspect, I should be practicing designing / adding  more screens
+                                    improve on this, I should be practicing designing / adding  more screens
                                     for some areas of the web app that were left uncovered.</li>
                                 <li>Managing this kind of “project” was new to me. Lauren and Dom had the role from 
                                     the previous project. Once again, they were kind enough to help me do my job 
                                     smoothly. Because of that, I’d like to research more on different ways to manage 
-                                    projects in UX Design or any tech field productively.</li>  
+                                    projects in any field productively.</li>  
                                 <li>I also got good feedback from teammates, classmates and instructors on my 
                                     presentation / introduction skills mixed with an unusual  humor which made our 
                                     supposedly boring topic interesting. This motivates me more to keep on bettering
                                     myself in whatever goal I want to achieve.</li>
                                 <li>Lastly, the key finding was that our users / Loss Prevention Experts (and with 
-                                    consideration to our proto persona as well) need to have a better loss prevention 
+                                    consideration to our proto persona) need to have a better loss prevention 
                                     tool user experience in terms of data / report analysis and managing cases. We 
                                     attempted to solve that by designing the web app with the success metrics in mind- 
                                     Quick Learning Curve; Easy to use for Loss Prevention Investigators; Validate Idea 

@@ -8,14 +8,6 @@
  - content styles
  - contact
  - footer
-
-
-
-- Project:    Mary Ann - HTML Template
-- Version:    1.0
-- 
-- Profile:    http://themeforest.net/user/andreysokoltsov
-
 -------------------------------------------------------------------*/
 
 /* global styles */
@@ -572,7 +564,7 @@ body {
 .margin-box {
   margin-bottom: 30px; }
 
-.margin-box.margin-p p {
+.margin-p p {
   margin-bottom: 15px; }
 
 .margin-box.margin-p p:last-child {

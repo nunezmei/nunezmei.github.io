@@ -278,7 +278,8 @@ $(document).ready(function () {
 
     lightbox.option({
         'resizeDuration': 200,
-        'wrapAround': true
+        'wrapAround': true,
+        fitImagesInViewport: false
       });
 
 

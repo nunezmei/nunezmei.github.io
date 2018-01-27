@@ -24,7 +24,7 @@ canonical: project-geekwire
 
                 <div class="margin-box margin-p">
                     <h2>Overview</h2>
-                    <div class="opacity-box"></div>
+                    <div class="outer-box"></div>
                     <h3>About</h3>
                         <p>GeekWire is a fast-growing, national technology news site founded in 2011 with 
                            strong roots in the Seattle region and a large audience of loyal, tech-savvy 
@@ -62,12 +62,45 @@ canonical: project-geekwire
                             {% include img.html
                                 image="media/projects/geekwire.b-a"
                                 caption="GeekWire app before and after redesign" %}
-                    </div>            
+                    </div>
+                    <h3>The Challenge</h3>
+                        <p>GeekWire mobile app users want to be able to Search an article easily without getting lost 
+                            in the process. They also want to be able to Share, Bookmark, and Comment on an article within 
+                            the app.</p>
+                                
+                        <p>Currently:</p>
+                        <div>
+                            <ul>
+                                <li>The app does not have an easy search option.</li>  
+                                <li>It does have share feature.</li> 
+                                <li>It lacks bookmarking capability.</li>
+                                <li>It does not have commenting ability within the app.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="imgbox">
+                                {% include img.html
+                                    image="media/projects/geekwire.nosearch"
+                                    caption="Original app Main Screen, no Search option" %}
+                                {% include img.html
+                                    image="media/projects/geekwire.sharing"
+                                    caption="Share feature" %}
+                                {% include img.html
+                                image="media/projects/geekwire.nobookmark"
+                                caption="No Bookmarking option" %}
+                                {% include img.html
+                                image="media/projects/geekwire.cantcomment"
+                                caption="Can see comments but will not let you comment within the app" %}
+                        </div>
+                    <h3>The Solution</h3> 
+                        <p>By adding features that make GeekWire mobile app have a clean look and to keep usability simple and easy, 
+                           users will have a great experience in using the app. Showcasing more of what the website has to offer 
+                           into the app will keep user returns up and bring in more business.</p>               
                 </div>
 
                 <div class="margin-box margin-p">
                     <h2>Discovery</h2>
-                    <div class="opacity-box"></div>
+                    <div class="outer-box"></div>
                     <h3>Research</h3>
                         <p>The first three days were spent gathering initial data to better understand the current app 
                            and user needs. As a team, we formulated 10 generic questions to be used for interviews 
@@ -152,35 +185,6 @@ canonical: project-geekwire
                                 </div>
                                 </div>
                             </div>                             
-                    <h3>The Challenge</h3>
-                        <p>GeekWire mobile app users want to be able to Search an article easily without getting lost 
-                            in the process. They also want to be able to Share, Bookmark, and Comment on an article within 
-                            the app.</p>
-                                
-                        <p>Currently:</p>
-                        <div>
-                            <ul>
-                                <li>The app does not have an easy search option</li>  
-                                <li>It does have share feature</li> 
-                                <li>It lacks bookmarking capability</li>
-                                <li>It does not have commenting ability within the app</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="imgbox">
-                                {% include img.html
-                                    image="media/projects/geekwire.nosearch"
-                                    caption="Original app Main Screen, no Search option" %}
-                                {% include img.html
-                                    image="media/projects/geekwire.sharing"
-                                    caption="Share feature" %}
-                                {% include img.html
-                                image="media/projects/geekwire.nobookmark"
-                                caption="No Bookmarking option" %}
-                                {% include img.html
-                                image="media/projects/geekwire.cantcomment"
-                                caption="Can see comments but will not let you comment within the app" %}
-                        </div>
                 
                     <h3>Competitive Analysis</h3>
                         <p>I did an initial competitive market research and came up with this.</p>
@@ -209,7 +213,7 @@ canonical: project-geekwire
 
                 <div class="margin-box margin-p">
                    <h2>Approach</h2>
-                   <div class="opacity-box"></div>
+                   <div class="outer-box"></div>
                    <h3>Persona</h3>
                         <p>The team and I developed a proto persona based on my initial user research. His name is 
                            Zach Peterson, a very busy full stack developer at Amazon. Being a tech entrepreneur, 
@@ -233,33 +237,20 @@ canonical: project-geekwire
                                 {% include img.html one=true
                                     image="media/projects/geekwire.storyboard"
                                     caption="Storyboard" %}
-                        </div>   
-
-                    <h3>Feature Prioritization</h3>
-                        <p>Based on the results of user research, I helped in selecting the top three pain points to address in 
-                            our redesign:</p>
-                            <ul>
-                                <li>Provide search field </li>
-                                <li>Allow sharing option</li>
-                                <li>Add bookmark feature</li>
-                            </ul>
-                        
-                    <h3>Problem Statement and Solution</h3>
-                        <p>My fellow teammates and I have observed that GeekWire is focusing more on their internet experience 
-                            instead of mobile app experience. We noticed that saving articles, sharing articles and commenting 
-                            an article/s are major pain points the mobile app has, which is causing less users on their mobile 
-                            app. How might we improve so that our product is more successful based on the success other 
-                            technology news mobile apps have?
-                        </p>
-                        <p>We decided that from our proto persona and input to keep a clean look throughout the app and to keep 
-                            usability simple and easy. We want to bring more of what the website has to offer into the app to 
-                            keep user returns up and bring in more business.
-                        </p>          
+                        </div>  
                 </div>
 
                 <div class="margin-box margin-p">
                     <h2>Design</h2>
-                    <div class="opacity-box"></div>
+                    <div class="outer-box"></div>
+                    <h3>Feature Prioritization</h3>
+                    <p>Based on the results of user research, I helped in selecting the top three pain points to address in 
+                       our redesign:</p>
+                        <ul>
+                            <li>Provide search field </li>
+                            <li>Allow sharing option</li>
+                            <li>Add bookmark feature</li>
+                        </ul>    
                     <h3>Sketching &amp; Design Studio</h3>
                         <p>Todd being the Interaction Designer led the creation of some rough sketches for the 
                            featured screens. I also provided my input as we did rounds of whiteboarding.
@@ -380,7 +371,7 @@ canonical: project-geekwire
                                     <li>Invited participants in person and thru email</li>       
                                 </ul>
                         <h4>Analyzing Results</h4>
-                            <h5>Quantitative Data</h5>
+                            <h5>Qualitative Data</h5>
                             <div class="imgbox">
                                     {% include img.html large=true one=true
                                         image="media/projects/geekwire.findingsreport1"
@@ -440,7 +431,7 @@ canonical: project-geekwire
                                 <li>Invited participants in person</li>            
                             </ul>
                         <h4>Analyzing Results</h4>
-                            <h5>Quantitative Data</h5>
+                            <h5>Qualitative Data</h5>
                             <div class="imgbox">
                                     {% include img.html large=true one=true
                                         image="media/projects/geekwire.findingsreport5"
@@ -516,7 +507,7 @@ canonical: project-geekwire
                 <div class="sidebar-form">
                     <div class="margin-box">
                         <h4>Need UX design help?</h4>
-                        <div class="opacity-box">
+                        <div class="outer-box">
                             <p>Are you working on something similar? I would love to help make it happen!
                                 Just send me your e-mail and we will discuss your project together.</p>
                         </div>

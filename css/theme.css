@@ -8,17 +8,12 @@
  - content styles
  - contact
  - footer
-
-
-
-- Project:    Mary Ann - HTML Template
-- Version:    1.0
-- 
-- Profile:    http://themeforest.net/user/andreysokoltsov
-
 -------------------------------------------------------------------*/
 
 /* global styles */
+p {
+  text-align: justify !important;
+}
 a {
   color: inherit;
   -webkit-transition: all 0.3s ease;
@@ -572,14 +567,14 @@ body {
 .margin-box {
   margin-bottom: 30px; }
 
-.margin-box.margin-p p {
+.margin-p p {
   margin-bottom: 15px; }
 
 .margin-box.margin-p p:last-child {
   margin-bottom: 0; }
 
 .img-box img {
-  max-width: 100%;
+  //max-width: 100%;
   margin-bottom: 15px; }
 
 .legend {
@@ -806,8 +801,17 @@ textarea.site-input:hover, textarea.site-input:focus {
 }
 
 .imgfig img {
-  border: solid 3px black;
+  border: solid 3px #667;
   padding: 3px;
+}
+
+.loss-prevention .imgfig img {
+  //border-color: #2079c7;
+}
+
+.oneimg {
+  width: 100%;
+  max-width: 500px;
 }
 
 /*# sourceMappingURL=maps/theme.css.map */

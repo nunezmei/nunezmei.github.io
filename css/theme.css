@@ -27,7 +27,8 @@ a:focus {
   text-decoration: none; }
 
 ul, ol, h1, h2, h3, h4, h5, h6, p {
-  margin: 0; }
+  xmargin: 0;
+}
 
 button:active,
 button:focus {
@@ -44,7 +45,7 @@ body {
 
   .built-with > a, 
   .built-with > a:hover {
-    color: blue;
+    color: #2079c7;
     text-decoration-line: underline;
   }
 /* Loader */
@@ -194,7 +195,8 @@ body {
   transition: none; }
 
 .header-links ul li a:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: #2079c7 }
 
 .change-lng li.active a {
   text-decoration: underline; }
@@ -796,7 +798,7 @@ textarea.site-input:hover, textarea.site-input:focus {
   cursor: pointer;
   font-weight: bold;
   font-size: 20px;
-  color: blue;
+  color: #2079c7;
 }
 #showmoreImg:hover {
   text-decoration: underline;
@@ -805,6 +807,9 @@ textarea.site-input:hover, textarea.site-input:focus {
 .imgfig img {
   border: solid 3px #667;
   padding: 3px;
+}
+.imgfig img.noborder {
+  border: none;
 }
 
 .loss-prevention .imgfig img {
@@ -821,6 +826,7 @@ textarea.site-input:hover, textarea.site-input:focus {
   font-weight: bold;
   position: relative;
   top: -45px;
+  color: #2079c7
 }
 
 .showfullquote:hover {
@@ -830,8 +836,8 @@ textarea.site-input:hover, textarea.site-input:focus {
 .cbold {
   font-weight: bold;
   font-style: normal;
-  font-size: 17px;
-  color: blue;
+  font-size: 20px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=maps/theme.css.map */

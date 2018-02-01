@@ -1,6 +1,6 @@
 <figure class="imgfig">
     <a href="{{ include.image }}{% if include.large %}-large{% endif %}.jpg" data-lightbox="images1" data-title="{{ include.caption }}">
-        <img src="{{ include.image }}.jpg" {% if include.one%}class="oneimg"{% else %}style="width: 100%;"{% endif %} />
+        <img src="{{ include.image }}.jpg" {% if include.one%}class="oneimg"{% else %} {% if include.noborder %}class="noborder" {% endif %}style="width: 100%;"{% endif %} />
     </a>
     <figcaption>{{ include.caption }}</figcaption>
 </figure>

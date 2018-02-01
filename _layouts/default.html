@@ -138,10 +138,10 @@
             {% if page.nextUrl or page.prevUrl %}
             <div class="project-nav">
                 {% if page.prevUrl %}
-                <span class="mprev"><a href="{{ page.prevUrl }}" title="Go to prior project"><span class="mdi mdi-chevron-left mdi-dark"></span> Prior Project</a></span>
+                <span class="mprev"><a href="{{ page.prevUrl }}" title="Go to prior project"><span class="mdi mdi-chevron-left projarrow"></span> Prior Project</a></span>
                 {% endif %}
                 {% if page.nextUrl %}
-                <span class="mnext"><a href="{{ page.nextUrl }}"  title="go to next project">Next Project <span class="mdi mdi-chevron-right mdi-dark"></span></a></span>
+                <span class="mnext"><a href="{{ page.nextUrl }}"  title="go to next project">Next Project <span class="mdi mdi-chevron-right projarrow"></span></a></span>
                 {% endif %}
                 </div>
             {% endif %}

@@ -826,7 +826,7 @@ textarea.site-input:hover, textarea.site-input:focus {
   font-weight: bold;
   position: relative;
   top: -45px;
-  color: #2079c7
+  color: #2079c7;
 }
 
 .showfullquote:hover {
@@ -847,6 +847,10 @@ textarea.site-input:hover, textarea.site-input:focus {
 .margin-box ul li {
   padding-left: 5px;
   margin-bottom: 5px;
+}
+
+.projarrow {
+  color: #2079c7;
 }
 
 /*# sourceMappingURL=maps/theme.css.map */

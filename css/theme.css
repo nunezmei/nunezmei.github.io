@@ -806,12 +806,30 @@ textarea.site-input:hover, textarea.site-input:focus {
 }
 
 .loss-prevention .imgfig img {
-  //border-color: #2079c7;
 }
 
 .oneimg {
   width: 100%;
   max-width: 500px;
+}
+
+.showfullquote {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  position: relative;
+  top: -45px;
+}
+
+.showfullquote:hover {
+  text-decoration: underline;
+}
+
+.cbold {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 17px;
+  color: blue;
 }
 
 /*# sourceMappingURL=maps/theme.css.map */

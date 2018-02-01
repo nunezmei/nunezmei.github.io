@@ -290,4 +290,13 @@ $(document).ready(function () {
       });
 
 
+      function showFullQuote(quoteId) {
+          $("#full-QuoteModal .inner-content").html($("#"+ quoteId + "FullQuote").html());
+          $("#full-QuoteModal").modal();
+      }
+
+      $("body").on("click", ".showfullquote", function(event) {
+          showFullQuote($(this).data("quoteId"));
+          return false;
+      });
 });

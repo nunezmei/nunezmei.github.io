@@ -840,4 +840,13 @@ textarea.site-input:hover, textarea.site-input:focus {
   color: #000000;
 }
 
+.margin-box ul {
+  margin-left: 20px;
+}
+
+.margin-box ul li {
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+
 /*# sourceMappingURL=maps/theme.css.map */
